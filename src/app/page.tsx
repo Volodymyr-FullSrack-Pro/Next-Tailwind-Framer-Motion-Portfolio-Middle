@@ -1,5 +1,3 @@
-import { Button } from '@/components/ui/button'
-
 // rel="noopener noreferrer"
 {
 	/* <Image
@@ -15,8 +13,7 @@ import { Button } from '@/components/ui/button'
 export default function Home() {
 	return (
 		<div>
-			<h1 className='text-red-600'>Test</h1>
-			<Button>Click me</Button>
+			<h1 className='text-3xl'>Main Page</h1>
 		</div>
 	)
 }
