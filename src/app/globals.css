@@ -120,11 +120,31 @@
 	* {
 		@apply border-border outline-ring/50;
 	}
+
 	body {
 		@apply bg-background text-foreground;
 		font-family: var(--font-jetbrains-mono);
 		color: var(--color-light);
 		background-color: var(--color-dark);
-    line-height: 1.5;
+		line-height: 1.5;
+		scroll-behavior: smooth;
+		overflow-x: hidden;
+		height: 3000px;
+	}
+
+	::-webkit-scrollbar {
+		width: 8px;
+	}
+
+	::-webkit-scrollbar-track {
+		/* background: transparent; */
+	}
+
+	::-webkit-scrollbar-thumb {
+		border-radius: 20px;
+		background-color: var(--color-accent);
+	}
+	::-webkit-scrollbar-thumb:hover {
+		background-color: var(--color-accent);
 	}
 }
