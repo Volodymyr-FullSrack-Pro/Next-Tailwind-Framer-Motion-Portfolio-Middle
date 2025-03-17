@@ -129,7 +129,8 @@
 		line-height: 1.5;
 		scroll-behavior: smooth;
 		overflow-x: hidden;
-		height: 3000px;
+    margin: 0 auto;
+    padding: 0 10px;
 	}
 
 	::-webkit-scrollbar {
@@ -137,7 +138,6 @@
 	}
 
 	::-webkit-scrollbar-track {
-		/* background: transparent; */
 	}
 
 	::-webkit-scrollbar-thumb {
