@@ -6,7 +6,6 @@ import { usePathname } from 'next/navigation'
 
 const Nav = () => {
 	const pathname = usePathname()
-	console.log(pathname)
 	return (
 		<nav>
 			<ul className='flex items-center gap-8'>
@@ -14,9 +13,8 @@ const Nav = () => {
 					<Link
 						key={link.name}
 						href={link.path}
-						className={pathname === link.path ? 'text-red-500' : ''}
 					>
-						<li className='uppercase'>{link.name}</li>
+						<li className={`${pathname === link.path ? 'text-[var(--color-accent)] border-b-3 border-[var(--color-accent)]' : ''} uppercase font-medium hover:text-[var(--color-hover)] transition duration-300 ease-in-out pb-1`}>{link.name}</li>
 					</Link>
 				))}
 			</ul>

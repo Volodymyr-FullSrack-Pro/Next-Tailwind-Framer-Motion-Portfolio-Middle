@@ -39,6 +39,7 @@
 	--sidebar-ring: oklch(0.708 0 0);
 
 	--color-dark: #1c1c22;
+	--color-dark: #111111;
 	--color-light: #ffffff;
 	--color-accent: #00ff99;
 	--color-hover: #00e187;
@@ -124,13 +125,14 @@
 	body {
 		@apply bg-background text-foreground;
 		font-family: var(--font-jetbrains-mono);
-		color: var(--color-light);
 		background-color: var(--color-dark);
+		color: var(--color-light);
+		font-size: 16px;
 		line-height: 1.5;
 		scroll-behavior: smooth;
 		overflow-x: hidden;
-    margin: 0 auto;
-    padding: 0 10px;
+		margin: 0 auto;
+		padding: 0 15px;
 	}
 
 	::-webkit-scrollbar {
