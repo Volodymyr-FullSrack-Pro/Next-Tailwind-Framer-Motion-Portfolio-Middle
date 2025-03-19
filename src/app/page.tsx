@@ -1,11 +1,5 @@
-import Header from '@/components/Header'
-
 //a =  rel="noopener noreferrer"
 
 export default function Home() {
-	return (
-		<>
-			<Header />
-		</>
-	)
+	return <h1>Home Page</h1>
 }

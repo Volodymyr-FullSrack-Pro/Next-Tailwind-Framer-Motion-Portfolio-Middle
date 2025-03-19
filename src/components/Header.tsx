@@ -14,7 +14,9 @@ const Header = () => {
 				<div className='hidden xl:flex items-center gap-4'>
 					<Nav />
 					<Link className='ml-10' href='/contact'>
-						<Button className='cursor-pointer font-medium uppercase text-[22px]'>Hire me</Button>
+						<Button className='cursor-pointer font-bold uppercase rounded-xl text-[22px] bg-[var(--color-accent)] text-[var(--color-dark)] hover:bg-[var(--color-hover)] hover:text-[var(--color-dark)] transition duration-300 ease-in-out shadow-[0_0_12px_2.5px_rgba(36,197,94,1)] animate-(--animate-pulse-default)'>
+							Hire me
+						</Button>
 					</Link>
 				</div>
 			</div>

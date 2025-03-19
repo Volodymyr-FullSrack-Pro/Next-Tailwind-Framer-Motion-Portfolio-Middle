@@ -14,7 +14,7 @@ const Nav = () => {
 						key={link.name}
 						href={link.path}
 					>
-						<li className={`${pathname === link.path ? 'text-[var(--color-accent)] border-b-3 border-[var(--color-accent)]' : ''} uppercase font-medium hover:text-[var(--color-hover)] transition duration-300 ease-in-out pb-1`}>{link.name}</li>
+						<li className={`${pathname === link.path ? 'text-[var(--color-accent)] border-b-3 border-[var(--color-accent)]' : ''} uppercase font-bold hover:text-[var(--color-hover)] transition duration-300 ease-in-out pb-0.5`}>{link.name}</li>
 					</Link>
 				))}
 			</ul>
